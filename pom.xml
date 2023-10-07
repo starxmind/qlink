@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <name>qlink</name>
+    <description>Links all kinds of queries...</description>
+    <url>https://starxmind.com/</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>pizzalord</name>
+            <email>pizzalord@starxmind.com</email>
+        </developer>
+    </developers>
+    <scm>
+        <url>https://github.com/starxmind/qlink.git</url>
+        <connection>scm:git:https://github.com/starxmind/qlink.git</connection>
+        <developerConnection>scm:git:https://github.com/starxmind/qlink.git</developerConnection>
+    </scm>
+
+    <modules>
+
+    </modules>
+
+    <parent>
+        <groupId>com.starxmind</groupId>
+        <artifactId>bass</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <groupId>com.starxmind</groupId>
+    <artifactId>qlink</artifactId>
+    <version>0.0.1</version>
+
+    <properties>
+        <qlink.version>0.0.1</qlink.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.starxmind</groupId>
+            <artifactId>bass-sugar</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <!-- Aliyun repository -->
+        <repository>
+            <id>nexus-aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <!-- Maven central repository -->
+        <repository>
+            <id>nexus-center</id>
+            <url>http://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
+</project>
